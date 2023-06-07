@@ -1,4 +1,4 @@
-package ma.enset.bddc.SMA;
+package ma.enset.bddc.IsLand;
 
 import jade.core.Profile;
 import jade.core.ProfileImpl;
@@ -11,7 +11,7 @@ public class MainContainer {
         Runtime runtime=Runtime.instance();
         ProfileImpl profile=new ProfileImpl();
         profile.setParameter(Profile.GUI,"true");
-        AgentContainer mainContainer = runtime.createMainContainer(profile);
-        mainContainer.start();
+        AgentContainer agentContainer=runtime.createMainContainer(profile);
+        agentContainer.start();
     }
 }
